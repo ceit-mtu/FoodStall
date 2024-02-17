@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Padauk:wght@400;700&display=swap");
 
 @font-face {
   font-family: "Ghibli";
@@ -31,9 +31,9 @@ section#introduction {
 }
 .birds {
   position: absolute;
-  width: 53%;
+  width: 30%;
   left: 0;
-  z-index: 3;
+  z-index: -1;
 }
 .text1 {
   font-family: "Ghibli", sans-serif;
@@ -79,29 +79,32 @@ section#introduction {
 .blueberry {
   color: #0b60b0;
 }
-
+.order {
+  background-image: url("scroll.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5rem;
+}
 .text2 {
   color: #171219;
 }
+
 h2.order-text {
   font-family: "Pacifico", cursive;
   font-size: 45px;
+  text-align: center;
 }
-table,
-td,
-th {
-  padding: 0.7rem;
-}
+
 table.text2 {
-  background-color: #171219;
   border-spacing: 5px;
   text-align: left;
 }
-.text2 td {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+.order .place,
+.order .number{
+  font-family: "Montserrat","Padauk", sans-serif;
+  font-weight: 700;
   font-size: 28px;
-  color: #eeedeb;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -117,11 +120,18 @@ table.text2 {
   .description {
     font-size: 20px;
   }
-  .text2 td {
+  .order .place,
+  .order .number {
     font-size: 23px;
   }
   h2.order-text {
     font-size: 40px;
+  }
+  .order {
+    padding: 4.7rem;
+  }
+  .birds {
+    width: 40%;
   }
 }
 
@@ -138,11 +148,18 @@ table.text2 {
   .description {
     font-size: 20px;
   }
-  .text2 td {
+  .order .place,
+  .order .number{
     font-size: 18px;
   }
   h2.order-text {
     font-size: 35px;
+  }
+  .order {
+    padding: 3.7rem;
+  }
+  .birds {
+    width: 50%;
   }
 }
 
@@ -159,10 +176,14 @@ table.text2 {
   .description {
     font-size: 15px;
   }
-  .text2 td {
+  .order .place,
+  .order .number {
     font-size: 13px;
   }
   h2.order-text {
     font-size: 25px;
+  }
+  .order {
+    padding: 2.7rem;
   }
 }
